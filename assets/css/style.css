@@ -1,5 +1,6 @@
 :root {
     --white : #faf4f9;
+    --blue : #0d80e9;
 }
 
 * {
@@ -13,21 +14,22 @@ body {
 }
 
 header {
-    height: 100px;
+    height: 70px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--white);
+    background: var(--blue);
     padding: 0 30px;
 }
 
 .primary-navigation {
     height: 100%;
     width: 100%;
+    max-width: 900px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .primary-navigation .logo,
@@ -40,9 +42,10 @@ header {
 }
 
 .primary-navigation .menu {
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .primary-navigation .menu li {
@@ -56,19 +59,74 @@ header {
     text-decoration: none;
     font-weight: 600;
     font-size: 1.1rem;
+    color: white;
 }
 
 #hero {
-    background: url(../images/swimming-pool.jpg) #00000040;
-    min-height: 600px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-blend-mode: multiply;
-    background-position: center;
+    background: var(--blue);
+    /* filter: blur(2px); */
+    min-height: calc(100vh - 70px);
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
 }
 
 #hero h1 {
     font-size: 3rem;
     text-align: center;
+}
+
+#hero .image-container {
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero .image-container img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#hero .section {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+#hero .section .logo-container {
+    width: 100%;
+    max-width: 300px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+#hero .section .logo-container img {
+    width: 100%;
+}
+
+#hero .section p {
+    padding: 20px;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+#hero .section a {
+    color: inherit;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 13px 10px;
+    background: white;
+    color: var(--blue);
+    border-radius: 5px;
 }
