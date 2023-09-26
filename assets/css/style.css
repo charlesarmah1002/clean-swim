@@ -66,7 +66,7 @@ header {
 #hero {
     background: var(--blue);
     /* filter: blur(2px); */
-    min-height: calc(100vh - 70px);
+    height: calc(100vh - 70px);
     color: white;
     display: flex;
     align-items: center;
@@ -101,7 +101,7 @@ header {
 }
 
 #hero .section .logo-container {
-    width: 100%;
+    width: 70%;
     max-width: 300px;
     overflow: hidden;
     display: flex;
