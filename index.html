@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clean Swim</title>
 
-    <link rel="shortcut icon" href="assets/images/logo.png" type="image/png">
+    <link rel="shortcut icon" href="assets/images/clean-swim-logo.png" type="image/png">
 
     <!-- fontawesome css -->
     <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- custom css -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -30,20 +33,35 @@
     <main>
         <section id="hero">
             <div class="section">
-                <div class="logo-container">
+                <div class="logo-container" data-aos="fade-up" data-aos-delay="300">
                     <img src="assets/images/clean-swim-logo.png" alt="">
                 </div>
-                <h1>Clean Swim Pool Cleaning Service</h1>
-                <p>"Dive into pristine, sparkling waters with our expert pool cleaning service. We ensure hassle-free pool ownership, delivering top-notch maintenance and repairs. Enjoy a worry-free oasis &hyphen; jump in today!"</p>
-                <div class="buttons">
+                <h1 data-aos="fade-up" data-aos-delay="400">Clean Swim Pool Cleaning Service</h1>
+                <p data-aos="fade-up" data-aos-delay="500">"Dive into pristine, sparkling waters with our expert pool cleaning service. We ensure hassle-free pool ownership, delivering top-notch maintenance and repairs. Enjoy a worry-free oasis &hyphen; jump in today!"</p>
+                <div class="buttons" data-aos="fade-up" data-aos-delay="550">
                     <a href="" class="lm-btn">Learn More</a>
                 </div>
             </div>
-            <div class="image-container">
+            <div class="image-container" data-aos="fade-in" data-aos-delay="500">
                 <img src="assets/images/male_and_female_workers_cleaning_swimming_pool copy.png" alt="">
             </div>
         </section>
+        <section>
+            <div class="card-container">
+                <div class="card">
+                    <div class="image-container">
+                        <img src="assets/images/" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 </html>
