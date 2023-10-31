@@ -10,125 +10,166 @@
 }
 
 body {
-    font-family: montserrat, sans-serif;
-    min-height: 150vh;
+    font-family: "Montserrat", sans-serif;
+    min-height: 200vh;
+    font-size: 16px;
+    cursor: default;
 }
 
-header {
-    height: 70px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--blue);
-    padding: 0 30px;
-}
-
-.primary-navigation {
-    height: 100%;
-    width: 100%;
-    max-width: 900px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.primary-navigation .logo,
-.primary-navigation .logo .image-container {
-    height: 100%;
-}
-
-.primary-navigation .logo .image-container img {
-    height: 100%;
-}
-
-.primary-navigation .menu {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.primary-navigation .menu li {
-    list-style: none;
-    margin: 5px;
-    text-transform: capitalize;
-    padding: 5px;
-}
-
-.primary-navigation .menu li a{
+a {
+    color: inherit;
     text-decoration: none;
-    font-weight: 600;
-    font-size: 1.1rem;
-    color: white;
+    font-weight: 500;
 }
 
-#hero {
-    background: var(--blue);
-    /* filter: blur(2px); */
-    height: calc(100vh - 70px);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap-reverse;
-}
-
-#hero h1 {
-    font-size: 3rem;
-    text-align: center;
-}
-
-#hero .image-container {
+img {
     width: 100%;
-    max-width: 600px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#hero .image-container img {
-    width: 100%;
+    height: 100%;
     object-fit: cover;
     object-position: center;
 }
 
-#hero .section {
-    width: 100%;
-    max-width: 600px;
-    text-align: center;
-}
-
-#hero .section .logo-container {
-    width: 70%;
-    max-width: 300px;
-    overflow: hidden;
+.btn {
+    width: 150px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid;
+    border-radius: 4px;
+}
+
+.login-btn {
+    color: white;
+    border: none;
+    background: var(--blue) !important;
+}
+
+.signup-btn {
+    background: white;
+    color: var(--blue);
+}
+
+.flex-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+.flex-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* navigation */
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    height: 80px;
+    padding: 0 20px;
+}
+
+nav.primary-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: min(100%, 1300px);
+    height: 100%;
+}
+
+nav.primary-navigation .image-container {
+    height: 50px;
+}
+
+nav.primary-navigation .menu {
+    margin: auto !important;
+}
+
+nav.primary-navigation .menu li {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+}
+
+nav.primary-navigation .menu li a:hover {
+    color: var(--blue);
+    transition: 0.3s;
+}
+
+nav.primary-navigation .button a {
+    width: 35px;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+
+/* hero section */
+section#hero {
+    min-height: 600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+section#hero .container {
+    width: min(100%, 700px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+}
+
+section#hero .container h1 {
+    font-size: 2rem;
+    color: var(--blue);
+}
+
+section#hero .container p {
+    color: #5a5a5a;
+}
+
+section#hero .container .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* ad */
+section#ad {
+    background: var(--blue);
+    color: white;
+}
+
+section#ad .container {
+    width: min(100%, 1100px);
     margin: auto;
 }
 
-#hero .section .logo-container img {
-    width: 100%;
+section#ad .container .image-container {
+    width: min(100%, 400px);
+    margin-top: -150px;
 }
 
-#hero .section p {
-    padding: 20px;
-    font-size: 1.2rem;
-    text-align: center;
-    font-weight: 600;
+section#ad .container .text {
+    width: min(100%, 500px);
+    display: grid;
+    grid-template-columns: auto;
+    gap: 14px;
 }
 
-#hero .section a {
-    color: inherit;
-    font-size: 1.2rem;
-    font-weight: 500;
-    text-decoration: none;
-    padding: 7px 10px;
-    background: white;
-    color: var(--blue);
-    border-radius: 3px;
-    margin-top: 15px;
+section#ad .container .text h3 {
+    font-weight: 300;
+    font-size: 2rem;
 }
