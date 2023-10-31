@@ -11,9 +11,10 @@
 
 body {
     font-family: "Montserrat", sans-serif;
-    min-height: 200vh;
+    /* min-height: 200vh; */
     font-size: 16px;
     cursor: default;
+    background: var(--white);
 }
 
 a {
@@ -40,13 +41,13 @@ img {
 }
 
 .login-btn {
-    color: white;
+    color: var(--white);
     border: none;
     background: var(--blue) !important;
 }
 
 .signup-btn {
-    background: white;
+    background: var(--white);
     color: var(--blue);
 }
 
