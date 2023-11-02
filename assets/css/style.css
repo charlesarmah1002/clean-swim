@@ -381,3 +381,35 @@ section#shop .button .btn {
     color: var(--white);
     border: none;
 }
+
+/* map */
+section#map .flex-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    width: min(100%, 900px);
+    margin: auto;
+    padding: 120px 0;
+}
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    width: min(100%, 500px);
+    margin: auto;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    width: 100%;
+    height: 400px;
+}
+
+.gmap_iframe {
+    height: 400px !important;
+}
+
+section#map .locations h5 {
+    font-weight: 400;
+    font-size: 1.8rem;
+    text-align: left;
+}
